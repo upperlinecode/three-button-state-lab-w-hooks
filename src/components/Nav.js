@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Nav() {
-  return(
+const Nav = () => {
+  return (
     <div className="Nav">
       <h1>Let's Master State</h1>
     </div>
   );
-}
+};
 
 export default Nav;
