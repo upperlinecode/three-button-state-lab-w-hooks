@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import StateCard from "./components/StateCard.js";
 import Nav from "./components/Nav.js";
 
 const App = () => {
+  // let user = "Wanda";
+  const [user, setUser] = useState("Wanda");
+
+  const handleButton1 = () => {};
+
+  const handleButton2 = () => {};
+
   return (
     <div className="App">
       <Nav />
-      <StateCard />
+      <div className="StateCard">
+        <h1>Welcome {user}</h1>
+        <div className="card-content">
+          <div className="item">
+            <button onClick={handleButton1}>xx</button>
+          </div>
+          <div className="item">
+            <button onClick={handleButton2}>xx</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
